@@ -22,9 +22,6 @@ export default function BasicExample() {
           <p className="navtitle"> Expense Keeper</p>
           <ul>
             <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
               <Link to="/dashboard">Dashboard</Link>
             </li>
             <li>
@@ -43,10 +40,7 @@ export default function BasicExample() {
         </div>
         <hr />
         <Switch>
-          <Route exact path="/">
-            <Home />{" "}
-          </Route>
-          <Route path="/dashboard">
+          <Route path="/">
             <Dashboard />{" "}
           </Route>
           <Route path="/create">
@@ -67,6 +61,9 @@ export default function BasicExample() {
             <NotFound />{" "}
           </Route>
         </Switch>
+        <div className="footer">
+          <p className="text-center">with Love From Psalm Sam</p>
+        </div>
       </div>
     </Router>
   );
