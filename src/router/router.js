@@ -12,27 +12,35 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 export default function BasicExample() {
   return (
     <Router>
-      <div>
-        <ul style={{ display: "flex", listStyle: "none" }}>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/dashboard">Dashboard</Link>
-          </li>
-          <li>
-            <Link to="/create">Create</Link>
-          </li>
-          <li>
-            <Link to="/help">Help</Link>
-          </li>
-          <li>
-            <Link to="/login">Login</Link>
-          </li>
-          <li>
-            <Link to="/register">Register</Link>
-          </li>
-        </ul>
+      <div className="header">
+        <div className="navarea">
+          <div className="navicon">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <p className="navtitle"> Expense Keeper</p>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/dashboard">Dashboard</Link>
+            </li>
+            <li>
+              <Link to="/create">Create</Link>
+            </li>
+            <li>
+              <Link to="/help">Help</Link>
+            </li>
+            <li>
+              <Link to="/login">Login</Link>
+            </li>
+            <li>
+              <Link to="/register">Register</Link>
+            </li>
+          </ul>
+        </div>
         <hr />
         <Switch>
           <Route exact path="/">

@@ -1,3 +1,51 @@
+body {
+  background: #dfdfe2;
+}
 .App {
   text-align: center;
+}
+
+/* navbar styling  
+..for large screen */
+.navarea {
+  height: 70px;
+  background: rgb(7, 2, 34);
+  overflow: hidden;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 20px;
+}
+
+.navarea .navtitle {
+  font-size: 24px;
+  color: white;
+  font-weight: 900;
+  text-align: left;
+  margin-right: 20px;
+}
+
+.navarea ul {
+  text-decoration: none;
+  list-style: none;
+  flex: 1;
+  display: flex;
+}
+.navarea ul li {
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.navarea ul li a {
+  color: #dfdfe2;
+  transition: all 0.5s ease-in;
+}
+
+.navarea ul li a:hover {
+  text-decoration: line-through;
+  color: #007aff;
 }
